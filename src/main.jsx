@@ -8,15 +8,18 @@ import MainLayout from './Components/Layout/MainLayout';
 import About from './Components/Pages/About';
 import Services from './Components/Pages/Services';
 import Contact from './Components/Pages/Contact';
-import Privet from './Components/Pages/Privet';
 import Login from './Components/Pages/Login';
 import Register from './Components/Pages/Register';
+import Private from './Components/Pages/Private';
+import ErrorPage from './Components/Pages/ErrorPage';
+import AuthProvider from './Components/Provider/AuthProvider/AuthProvider';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element:<MainLayout></MainLayout> ,
+    errorElement:<ErrorPage></ErrorPage>,
     children: [ 
 
        {
@@ -46,8 +49,8 @@ const router = createBrowserRouter([
        },
        {
 
-        path:"/privet",
-        element:<Privet></Privet>
+        path:"/private",
+        element:<Private></Private>
 
        },
        {
@@ -73,6 +76,9 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode> 
-    <RouterProvider router={router} />
+
+   <AuthProvider>
+   <RouterProvider router={router} />
+   </AuthProvider>
   </React.StrictMode>,
 )
