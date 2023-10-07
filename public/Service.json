@@ -1,0 +1,54 @@
+
+[
+    {
+      "id": 1,
+      "name": "Customized Workshops",
+      "image": "customized-workshops.jpg",
+      "price": "$1000",
+      "description": "Tailor-made workshops to meet specific team needs.",
+      "button": "Learn More"
+    },
+    {
+      "id": 2,
+      "name": "Outdoor Adventure Workshops",
+      "image": "outdoor-adventure.jpg",
+      "price": "$800",
+      "description": "Outdoor activities for team bonding and leadership.",
+      "button": "Learn More"
+    },
+    {
+      "id": 3,
+      "name": "Virtual Team Building",
+      "image": "virtual-teambuilding.jpg",
+      "price": "$500",
+      "description": "Online sessions to improve remote team cohesion.",
+      "button": "Learn More"
+    },
+    {
+      "id": 4,
+      "name": "Leadership Development",
+      "image": "leadership-development.jpg",
+      "price": "$1200",
+      "description": "Training programs to enhance leadership skills.",
+      "button": "Learn More"
+    },
+    {
+      "id": 5,
+      "name": "Communication Skills Training",
+      "image": "communication-training.jpg",
+      "price": "$600",
+      "description": "Enhance communication, active listening, and conflict resolution.",
+      "button": "Learn More"
+    },
+    {
+      "id": 6,
+      "name": "Diversity and Inclusion Workshops",
+      "image": "diversity-inclusion.jpg",
+      "price": "$900",
+      "description": "Promote diversity, inclusion, and cultural sensitivity.",
+      "button": "Learn More"
+    }
+  ]
+  
+
+  
