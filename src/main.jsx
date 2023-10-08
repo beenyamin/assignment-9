@@ -10,9 +10,10 @@ import Services from './Components/Pages/Services';
 import Contact from './Components/Pages/Contact';
 import Login from './Components/Pages/Login';
 import Register from './Components/Pages/Register';
-import Private from './Components/Pages/Private';
 import ErrorPage from './Components/Pages/ErrorPage';
 import AuthProvider from './Components/Provider/AuthProvider/AuthProvider';
+import Details from './Components/Pages/Details';
+import PrivateRoute from './Routes/PrivateRoute';
 
 
 const router = createBrowserRouter([
@@ -49,8 +50,8 @@ const router = createBrowserRouter([
        },
        {
 
-        path:"/private",
-        element:<Private></Private>
+        path:"/details",
+        element:<PrivateRoute><Details></Details></PrivateRoute>
 
        },
        {

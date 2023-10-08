@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { createContext, useEffect, useState } from 'react';
-import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
+import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
 import app from '../../Firebase.config';
 
 export const AuthContext = createContext(null);
@@ -29,13 +29,14 @@ const AuthProvider = ({ children }) => {
 
     const logOut = () => {
         setLoading(true);
-        return signOut(auth);
+        return signOut (auth);
     }
+
 
 
     useEffect(() => {
         const unSubscribe = onAuthStateChanged(auth, currentUser => {
-            console.log('Current value of the current user', currentUser);
+            console.log('observing  current user', currentUser);
             setUser(currentUser);
             setLoading(false);
         });
