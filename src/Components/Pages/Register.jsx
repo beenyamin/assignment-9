@@ -131,7 +131,7 @@ const Register = () => {
 
                         <div className=" w-3/6 ml-24 ">
 
-                            <button onClick={handleGoogleRegister} className=" btn btn-warning mb-4 px-3 "> Google Login </button>
+                            <button onClick={handleGoogleRegister} className=" btn btn-warning mb-4 px-3 ">  Google Registration </button>
 
 
 

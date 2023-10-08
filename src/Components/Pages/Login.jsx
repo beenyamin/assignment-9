@@ -1,7 +1,6 @@
 import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider/AuthProvider";
-import { FcGoogle } from "react-icons/fc";
 import toast, { Toaster } from "react-hot-toast";
 
 
@@ -106,7 +105,7 @@ const Login = () => {
 
          <div className=" w-3/6 ml-24 ">  
 
-         <button onClick={handleGoogleLogin} className="  btn btn-warning "> Google Login </button>
+         <button onClick={handleGoogleLogin} className=" btn btn-warning "> Google Login </button>
 
 
 

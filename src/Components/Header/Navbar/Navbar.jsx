@@ -33,6 +33,7 @@ const Navbar = () => {
 
                             user ? <>
                                 <span className="font-bold py-3 mr-3">{user.email}</span>
+                                
 
                                 <Link to={'/login'}> <button onClick={handleSignOut} type="button" className="text-white bg-blue-700 font-medium rounded-lg  px-4 py-2 ">Log Out</button> </Link>
                             </>
