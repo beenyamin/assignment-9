@@ -20,12 +20,12 @@ const Navbar = () => {
 
     return (
         <div>
-            <nav className="bg-white border-gray-200 dark:bg-gray-900">
+            <nav className="bg-white my-4 border-gray-200 dark:bg-gray-900">
 
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 
                     <h2 className="flex items-center">
-                        <span className=" font-Poppins self-center text-2xl font-semibold whitespace-nowrap dark:text-white">WorkShop</span>
+                        <span className=" font-Poppins self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Wed <span className="text-blue-500" >Hub</span> </span>
                     </h2>
                     <div className="flex md:order-2">
 

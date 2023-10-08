@@ -105,7 +105,7 @@ const Login = () => {
 
          <div className=" w-3/6 ml-24 ">  
 
-         <button onClick={handleGoogleLogin} className=" btn btn-warning "> Google Login </button>
+         <button onClick={handleGoogleLogin} className=" btn btn-outline btn-info "> Google Login </button>
 
 
 
