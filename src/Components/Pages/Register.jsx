@@ -26,7 +26,7 @@ const Register = () => {
 
 
         if (password.length < 6) {
-          toast.error('Password should be at least 6 characters!')
+            toast.error('Password should be at least 6 characters!')
             return;
 
         }
@@ -69,63 +69,83 @@ const Register = () => {
         <div>
 
 
-            <div className=" text-center justify-center my-20 bg-green-50  rounded py-4 " >
-
-
-                <h2 className="text-3xl font-bold my-10 text-center">Please Register</h2>
-
-
-                <form onSubmit={handleRegister} className=" md:w-3/4 lg:w-1/2 mx-auto">
-
-                    <div className="form-control">
-
-                        <label className="label">
-                            <span className="label-text">Your Name</span>
-                        </label>
-
-                        <input type="text" required name="name" placeholder="Your Name" className="input input-bordered" />
+            <div className="hero min-h-screen ">
+                <div className="hero-content flex-col ">
+                    <div className="text-center lg:text-left">
+                        <h1 className="text-3xl font-bold"> Please Register !</h1>
                     </div>
-                    <div className="form-control">
+                    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                        <div className="card-body">
 
-                        <label className="label">
-                            <span className="label-text">Email</span>
-                        </label>
+                            <form onSubmit={handleRegister}>
 
-                        <input type="email" required name="email" placeholder="Your Email" className="input input-bordered" />
+                                <div className="form-control ">
+                                    <label className="label">
+                                        <span className="label-text font-semibold ">Name</span>
+                                    </label>
+                                    <input type="text" name='name' placeholder="Your Name" required className="input input-bordered" />
+                                </div>
+                                <div className="form-control ">
+                                    <label className="label">
+                                        <span className="label-text font-semibold">Email</span>
+                                    </label>
+                                    <input type="email" name='email' placeholder="Your Email" required className="input input-bordered" />
+                                </div>
+
+
+
+                                <div className="form-control ">
+                                    <label className="label">
+                                        <span className="label-text font-semibold ">Password</span>
+                                    </label>
+                                    <input type="password" name='password' placeholder="Password" required className="input input-bordered" />
+
+
+
+                                </div>
+
+                                <div className="form-control mt-6">
+                                    <button className="w-full bg-blue-700  text-white rounded font-semibold py-2 text-xl ">Register</button>
+                                </div>
+
+
+                                {
+
+                                    registerError && <p className="bg-red-400 my-5 font-semibold">{registerError}</p>
+
+                                }
+
+                                {
+
+                                    signUpSuccess && <p className="text-blue-500 my-5 font-semibold">{signUpSuccess}</p>
+
+                                }
+
+                            </form>
+
+                            <p className="text-center mt-4">Already have an account? Please <Link className=" underline text-red-400  font-bold" to={'/login'}>Login</Link></p>
+
+
+
+                        </div>
+
+                        <div className=" w-3/6 ml-24 ">
+
+                            <button onClick={handleGoogleRegister} className=" btn btn-warning mb-4 px-3 "> Google Login </button>
+
+
+
+                        </div>
+
+
                     </div>
-                    <div className="form-control">
-                        <label className="label">
-                            <span className="label-text">Password</span>
-                        </label>
-                        <input type="password" required name="password" placeholder="New Password" className="input input-bordered" />
-
-                    </div>
-                    <div className="form-control mt-6">
-                        <button className="w-full text-white font-medium py-2 rounded bg-blue-700">Register</button>
-                    </div>
 
 
-                    {
-
-                        registerError && <p className="bg-red-400 my-5 font-semibold">{registerError}</p>
-
-                    }
-
-                    {
-
-                        signUpSuccess && <p className="text-blue-500 my-5 font-semibold">{signUpSuccess}</p>
-
-                    }
-
-                </form>
-                <p className="text-center mt-4">Already have an account? Please <Link className=" underline text-red-400 font-bold" to="/login">Login</Link></p>
-
-                <button onClick={handleGoogleRegister} className="bg-red-400 px-4 font-semibold text-white rounded"><FcGoogle className=""></FcGoogle>Google</button>
-
+                </div>
             </div>
 
             <Toaster></Toaster>
-     
+
 
         </div>
     );
