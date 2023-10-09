@@ -64,7 +64,7 @@ const Login = () => {
     <div className="hero min-h-screen ">
         <div className="hero-content flex-col ">
             <div className="text-center lg:text-left">
-                <h1 className="text-3xl font-bold"> Login Now!</h1>
+                <h1 className="text-3xl font-bold"> Login Here!</h1>
             </div>
      <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
         <div className="card-body">
@@ -86,26 +86,26 @@ const Login = () => {
                 </div>
 
                 <div className="form-control mt-6">
-                    <button className="w-full bg-blue-700  text-white rounded font-semibold py-2 text-xl">Log in</button>
+                    <button className="w-full bg-pink-500  text-white rounded font-semibold py-2 text-xl">Log in</button>
                 </div>
 
 
                 {
-                    loginError && <p className="bg-red-400 my-5 font-semibold">{loginError}</p>
+                    loginError && <p className="bg-pink-400 my-5 font-semibold">{loginError}</p>
                 }
 
                 {
-                    loginSuccess && <p className="text-blue-500 my-5 font-semibold">{loginSuccess}</p>
+                    loginSuccess && <p className="text-pink-500 my-5 font-semibold">{loginSuccess}</p>
                 }
 
             </form>
 
-            <p className="text-center mt-4">Do not have an account? Please <Link className=" underline text-red-400   font-bold" to={'/register'}>Register</Link></p>
+            <p className="text-center mt-4">Do not have an account? Please <Link className=" underline text-pink-400   font-bold" to={'/register'}>Register</Link></p>
 
 
          <div className=" w-3/6 ml-24 ">  
 
-         <button onClick={handleGoogleLogin} className=" btn btn-outline btn-info "> Google Login </button>
+         <button onClick={handleGoogleLogin} className=" bg-pink-500 py-2 rounded text-white font-semibold mb-4 px-3 "> Google Login </button>
 
 
 

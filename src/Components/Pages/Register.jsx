@@ -19,7 +19,9 @@ const Register = () => {
         const name = e.target.name.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
-        console.log(name, email, password);
+        const image = e.target.image.value;
+        
+        console.log(name, email, password , image);
 
         setRegisterError('');
         setSignUpSuccess('');
@@ -74,7 +76,7 @@ const Register = () => {
                     <div className="text-center lg:text-left">
                         <h1 className="text-3xl font-bold"> Please Register !</h1>
                     </div>
-                    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 ">
                         <div className="card-body">
 
                             <form onSubmit={handleRegister}>
@@ -85,6 +87,14 @@ const Register = () => {
                                     </label>
                                     <input type="text" name='name' placeholder="Your Name" required className="input input-bordered" />
                                 </div>
+
+                                <div className="form-control ">
+                                    <label className="label">
+                                        <span className="label-text font-semibold "> Your Image</span>
+                                    </label>
+                                    <input type="text" name='image' placeholder="Image Url" required className="input input-bordered" />
+                                </div>
+
                                 <div className="form-control ">
                                     <label className="label">
                                         <span className="label-text font-semibold">Email</span>
@@ -105,25 +115,25 @@ const Register = () => {
                                 </div>
 
                                 <div className="form-control mt-6">
-                                    <button className="w-full bg-blue-700  text-white rounded font-semibold py-2 text-xl ">Register</button>
+                                    <button className="w-full bg-pink-500  text-white rounded font-semibold py-2 text-xl ">Register</button>
                                 </div>
 
 
                                 {
 
-                                    registerError && <p className="bg-red-400 my-5 font-semibold">{registerError}</p>
+                                    registerError && <p className="bg-pink-400 my-5 font-semibold">{registerError}</p>
 
                                 }
 
                                 {
 
-                                    signUpSuccess && <p className="text-blue-500 my-5 font-semibold">{signUpSuccess}</p>
+                                    signUpSuccess && <p className="text-pink-500 my-5 font-semibold">{signUpSuccess}</p>
 
                                 }
 
                             </form>
 
-                            <p className="text-center mt-4">Already have an account? Please <Link className=" underline text-red-400  font-bold" to={'/login'}>Login</Link></p>
+                            <p className="text-center mt-4">Already have an account? Please <Link className=" underline text-pink-400  font-bold" to={'/login'}>Login</Link></p>
 
 
 
@@ -131,16 +141,10 @@ const Register = () => {
 
                         <div className=" w-3/6 ml-24 ">
 
-                            <button onClick={handleGoogleRegister} className=" btn btn-outline btn-info mb-4 px-3 ">  Google Registration </button>
-
-
+                <button onClick={handleGoogleRegister} className=" bg-pink-500 py-2 rounded text-white font-semibold mb-4 px-3 "> Google Registration </button>
 
                         </div>
-
-
                     </div>
-
-
                 </div>
             </div>
 
