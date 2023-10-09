@@ -4,7 +4,7 @@ const HappyCustomer = () => {
 
         <div className='mb-16'>
 
-            <div className='justify-center text-center mt-28 '>
+            <div className='justify-center text-center mt-28  '>
                 <h2 className='text-pink-500 text-3xl font-bold'>Our Happy Customer</h2>
             </div>
 

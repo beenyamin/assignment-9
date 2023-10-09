@@ -1,54 +1,27 @@
 import { useEffect, useState } from "react";
 import OneDetailsCard from "../DetailsCard/OneDetailsCard";
+import { useLoaderData, useParams } from "react-router-dom";
 
 const Details = () => {
 
-  const [detailsItem, setDetailsItem] = useState([])
-  const [noDataFound, setNoDAtaFound] = useState("")
-  const [seeAll, setSeeAll] = useState(false)
+  const [card, setCard] = useState({})
+    const { id } = useParams()
+    const sixCard = useLoaderData()
 
-  useEffect(() => {
-    const detailsPage = JSON.parse(localStorage.getItem('details'));
-    if (detailsPage) {
-      setDetailsItem(detailsPage)
-    } else {
-      setNoDAtaFound('Go To Home ==> choose One Service ! Then You Can See Service Details Here')
+    useEffect(() => {
+        const FindCard = sixCard?.find(card => card.id == id)
+        setCard(FindCard)
 
-    }
+    }, [id, sixCard])
 
-  }, [])
+    console.log(card)
 
+    return (
+        <div className=" mx-auto w-11/12 "> 
+    <OneDetailsCard card ={card}></OneDetailsCard>
 
-  console.log(detailsItem)
-  console.log(seeAll)
-
-
-  return (
-    <div>
-
-      {
-
-        noDataFound ? <p className=' h-64 font-bold text-2xl flex justify-center items-center'>{noDataFound} </p> :
-          <div>
-
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 mx-auto w-10/12'>
-
-              {seeAll ? 
-                detailsItem.map(card => <OneDetailsCard key={card.id} card={card}></OneDetailsCard>) :
-
-                detailsItem.slice(0, 6).map(card => <OneDetailsCard key={card.id} card={card}></OneDetailsCard>)}
-
-            </div>
-
-          </div>
-
-      }
-
-
-
-
-    </div>
-  );
+        </div>
+    );
 };
 
 export default Details;

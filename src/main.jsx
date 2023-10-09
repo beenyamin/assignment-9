@@ -14,6 +14,8 @@ import ErrorPage from './Components/Pages/ErrorPage';
 import AuthProvider from './Components/Provider/AuthProvider/AuthProvider';
 import Details from './Components/Pages/Details';
 import PrivateRoute from './Routes/PrivateRoute';
+import DetailsPage from './Components/DetailsPage/DetailsPage';
+
 
 
 const router = createBrowserRouter([
@@ -41,7 +43,7 @@ const router = createBrowserRouter([
        {
 
         path:"/services",
-        element:<Services></Services>
+        element:<PrivateRoute><Services></Services></PrivateRoute>
 
        },
        {
@@ -52,14 +54,19 @@ const router = createBrowserRouter([
        },
        {
 
-        path:"/details",
-        element:<PrivateRoute><Details></Details></PrivateRoute>
-
+        path:"/details/:id",
+        element:<PrivateRoute><Details></Details></PrivateRoute>,
+        loader:() => fetch ('/Wedding.json')
+         
        },
 
-       {
+       { 
 
-        
+        path :"/detailsPage",
+        element: <PrivateRoute><DetailsPage></DetailsPage></PrivateRoute>
+
+       
+  
 
 
        },

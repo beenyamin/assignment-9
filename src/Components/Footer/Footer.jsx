@@ -28,10 +28,11 @@ const Footer = () => {
                         <label className="label">
                             <span className="label-text">Enter your email address</span>
                         </label>
+                        
                         <div className="relative">
 
-                            <div className="join">
-                                <input className="input input-bordered join-item" placeholder="Email" />
+                            <div className="join ">
+                                <input className="input w-48 input-bordered join-item" placeholder="Email" />
                                 <button className="bg-pink-500 py-3 px-4 font-medium text-white join-item rounded-r-lg">Email Us</button>
                             </div>
                         </div>

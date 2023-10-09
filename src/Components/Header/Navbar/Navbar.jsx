@@ -12,28 +12,26 @@ const Navbar = () => {
         logOut()
             .then(() => console.log('user sign out'))
             .catch(error => console.error(error))
-
-
     }
 
 
     return (
         <div>
             <nav className="bg-white my-4 border-gray-200 dark:bg-gray-900">
-
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 
                     <h2 className="flex items-center">
                         <span className=" font-Poppins self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Wed <span className="text-pink-500" >Hub</span> </span>
                     </h2>
+
+
                     <div className="flex md:order-2">
 
                         {
 
                             user ? <>
-                                {/* <span className="font-bold py-3 mr-3">{user.email}</span> */}
-                                <span className="">{user.image}</span>
-                                
+                                <span className="font-bold py-3 mr-3">{user.email}</span>  
+
 
                                 <Link to={'/login'}> <button onClick={handleSignOut} type="button" className="text-white bg-pink-500 font-medium rounded-lg  px-4 py-2 ">Log Out</button> </Link>
                             </>
@@ -72,9 +70,9 @@ const Navbar = () => {
                             <li>
                                 <NavLink to={'/contact'} className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-pink-500 md:p-0 md:dark:hover:text-pink-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</NavLink>
                             </li>
-                            <li>
-                                <NavLink to={'/details'} className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-pink-500 md:p-0 md:dark:hover:text-pink-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Details</NavLink>
-                            </li>
+                            {/* <li>
+                                <NavLink to={'/detailsPage'} className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-pink-500 md:p-0 md:dark:hover:text-pink-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Details</NavLink>
+                            </li> */}
 
                         </ul>
 

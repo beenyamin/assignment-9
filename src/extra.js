@@ -1,5 +1,24 @@
 
 
+Venue Rental (100 words):
+
+Discover the perfect setting for your dream wedding with our Venue Rental service. From enchanting gardens to elegant ballrooms, we offer a diverse selection of stunning venues to suit your style and guest list. Our team ensures every detail is taken care of, from seating arrangements to lighting, so you can focus on creating cherished memories.
+Catering Services (100 words):
+
+Elevate your wedding experience with our Catering Services, where culinary artistry meets exceptional taste. Our chefs craft delectable menus tailored to your preferences, offering a gastronomic journey for your guests. From exquisite hors d'oeuvres to decadent desserts, our team ensures every bite is a delightful celebration of flavors.
+Floral Decorations (100 words):
+
+Transform your wedding into a blooming masterpiece with our Floral Decorations service. Our talented florists create enchanting arrangements, from bridal bouquets to ceremony backdrops. With an eye for detail and a passion for creativity, we bring the beauty of nature to your special day, enhancing every corner with vibrant colors and fragrant blooms.
+Photography & Videography (100 words):
+
+Capture the magic of your wedding day with our Photography & Videography service. Our skilled team of photographers and videographers is dedicated to preserving every precious moment. From candid shots to cinematic films, we ensure that your love story is documented in a way that you'll cherish for a lifetime.
+Wedding Planning Services (100 words):
+
+Let us turn your wedding dreams into reality with our Wedding Planning Services. Our experienced planners take care of all the details, from budgeting and timelines to venue selection and coordination. With meticulous planning and a personalized touch, we create a seamless and stress-free wedding experience, allowing you to savor every moment.
+Entertainment & Music (100 words):
+
+Set the mood and keep the celebration alive with our Entertainment & Music services. From live bands to DJs and dance troupes, we offer a diverse range of entertainment options to suit your tastes. Our talented performers bring energy and excitement to your event, ensuring that your guests have an unforgettable time on the dance floor.
+
 
 
 // const navLink = () => {

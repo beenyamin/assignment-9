@@ -1,52 +1,56 @@
 [
-    {
-      "id": 1,
-      "name": "Venue Rental",
-      "image": "https://i.ibb.co/7ytHCRL/vanue.jpg",
-      "price": "$5,000 - $10,000",
-      "short_description": "Elegant wedding venue rental.",
-      "button_text": "See More"
-    
-    },
-    {
-      "id": 2,
-      "name": "Catering Services",
-      "image": "https://i.ibb.co/2F57mZK/Catering-Services.png",
-      "price": "$50 - $150 per guest",
-      "short_description": "Exquisite catering services for your special day.",
-      "button_text": "See More"
-    },
-    {
-      "id": 3,
-      "name": "Floral Decorations",
-      "image": "https://i.ibb.co/0YgRG3d/Floral-Decorations.jpg",
-      "price": "$1,000 - $5,000",
-      "short_description": "Beautiful floral arrangements to enhance your wedding decor.",
-      "button_text": "See More"
-    },
-    {
-      "id": 4,
-      "name": "Photography & Videography",
-      "image": "https://i.ibb.co/JQ4gxGD/Photography-Videography-in-wedding.jpg",
-      "price": "$2,000 - $5,000",
-      "short_description": "Capture every moment On Your Wedding ",
-      "button_text": "See More"
-    },
-    {
-      "id": 5,
-      "name": "Wedding Planning Services",
-      "image": "https://i.ibb.co/TwFzbkv/Wedding-Planning-Services.jpg",
-      "price": "$2,500 - $7,000",
-      "short_description": "Experienced wedding planning services to bring your vision to life.",
-      "button_text": "See More"
-    },
-    {
-      "id": 6,
-      "name": "Entertainment & Music",
-      "image": "https://i.ibb.co/1Tqhhd6/Entertainment-Music.jpg",
-      "price": "$1,000 - $3,000",
-      "short_description": "Live music and entertainment options to keep your guests entertained.",
-      "button_text": "See More"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "name": "Venue Rental",
+    "image": "https://i.ibb.co/7ytHCRL/vanue.jpg",
+    "price": "$5,000 - $10,000",
+    "short_description": "Elegant wedding venue rental.",
+    "button_text": "See More",
+    "about": "Venue Rental provides an exceptional setting for your special day. Our elegant wedding venues offer a picturesque backdrop for your dream wedding, with stunning architecture, lush gardens, and versatile spaces to accommodate your needs. Whether you're planning an intimate affair or a grand celebration, our venues can be customized to reflect your unique style and vision. Our professional event coordinators will assist you in planning every aspect, ensuring a seamless and stress-free experience. With Venue Rental, you can create cherished memories and a magical start to your lifelong journey together."
+  },
+  {
+    "id": 2,
+    "name": "Catering Services",
+    "image": "https://i.ibb.co/2F57mZK/Catering-Services.png",
+    "price": "$50 - $150 per guest",
+    "short_description": "Exquisite catering services for your special day.",
+    "button_text": "See More",
+    "about": "Catering Services offers exquisite culinary experiences for your special day. Our talented chefs create gourmet menus that will delight your guests' taste buds. We provide a range of options to suit your event, from intimate gatherings to grand receptions. With attention to detail and top-notch service, our catering team ensures a seamless dining experience, leaving you and your guests with lasting impressions. Let us elevate your event with culinary excellence and impeccable service."
+  },
+  {
+    "id": 3,
+    "name": "Floral Decorations",
+    "image": "https://i.ibb.co/0YgRG3d/Floral-Decorations.jpg",
+    "price": "$1,000 - $5,000",
+    "short_description": "Beautiful floral arrangements to enhance your wedding decor.",
+    "button_text": "See More",
+    "about": "Floral Decorations bring beauty and elegance to your wedding decor. Our talented florists craft stunning floral arrangements that will transform your venue into a floral paradise. From bridal bouquets to centerpieces, our designs reflect your style and theme. We source the finest flowers to ensure freshness and vibrancy. Let our floral expertise enhance the ambiance of your special day, creating a romantic and visually stunning atmosphere for you and your guests."
+  },
+  {
+    "id": 4,
+    "name": "Photography & Videography",
+    "image": "https://i.ibb.co/JQ4gxGD/Photography-Videography-in-wedding.jpg",
+    "price": "$2,000 - $5,000",
+    "short_description": "Capture every moment On Your Wedding ",
+    "button_text": "See More",
+    "about": "Photography & Videography capture every cherished moment on your wedding day. Our skilled photographers and videographers are dedicated to preserving the essence of your celebration. We work discreetly to document candid moments, emotions, and all the details that make your day unique. With state-of-the-art equipment and a creative eye, we deliver stunning visual memories that you will treasure for a lifetime. Trust us to tell your love story through captivating images and videos."
+  },
+  {
+    "id": 5,
+    "name": "Wedding Planning Services",
+    "image": "https://i.ibb.co/TwFzbkv/Wedding-Planning-Services.jpg",
+    "price": "$2,500 - $7,000",
+    "short_description": "Experienced wedding planning services to bring your vision to life.",
+    "button_text": "See More",
+    "about": "Wedding Planning Services bring your dream wedding to life. Our experienced planners work tirelessly to make your vision a reality. From budget management to vendor coordination, we handle every detail with precision and care. We listen to your ideas and add our expertise to create a memorable and stress-free wedding experience. Whether you desire a traditional ceremony or a unique theme, we ensure it unfolds seamlessly. Let us be your trusted partner in planning, so you can enjoy your special day without worries."
+  },
+  {
+    "id": 6,
+    "name": "Entertainment & Music",
+    "image": "https://i.ibb.co/1Tqhhd6/Entertainment-Music.jpg",
+    "price": "$1,000 - $3,000",
+    "short_description": "Live music and entertainment options to keep your guests entertained.",
+    "button_text": "See More",
+    "about": "Entertainment & Music add vibrancy to your event. Our talented musicians and entertainers ensure that your guests have a fantastic time. From live bands to DJs, we offer a variety of options to match your style and atmosphere. Our professionals create an energetic and engaging environment, keeping your guests entertained throughout the event. With Entertainment & Music, your celebration will be filled with joy, dance, and memorable moments that everyone will cherish."
+  }
+]
