@@ -1,18 +1,12 @@
 
-
-
 const HappyCustomer = () => {
     return (
 
+        <div className='mb-16'>
 
-
-
-        <div className=''>
-
-            <div className='justify-center text-center mt-28'>
+            <div className='justify-center text-center mt-28 '>
                 <h2 className='text-pink-500 text-3xl font-bold'>Our Happy Customer</h2>
             </div>
-
 
             <div className="grid grid-cols-1 lg:grid-cols-3 mt-5 ">
 
@@ -67,12 +61,7 @@ const HappyCustomer = () => {
 
                     </div>
 
-
-
                 </div>
-
-
-
 
             </div>
 
